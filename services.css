@@ -1,0 +1,56 @@
+.services {
+    margin: 20px 170px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: center;
+}
+.services .services-title {
+    font-size: 32px;
+    font-weight: bold;
+}
+.services .services-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.services .services-content .service {
+    max-width: 200px;
+    padding: 30px 20px;
+    border: 1.5px solid #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.services .services-content .service .number {
+    font-weight: bold;
+}
+.services .services-content .service .services-content-title {
+    background: linear-gradient(267deg , #da7c25 , #b923e1);   
+    background-clip: text; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 20px;
+}
+.services .services-content .service p {
+    font-weight: bold;
+}
+.services .services-content .service a {
+    text-decoration: none;
+    font-weight: bold;
+}
+.services .services-content .service:hover {
+    background: linear-gradient(267deg , #da7d2588 , #b823e1c6); 
+    transform: scale(1.05);
+    rotate: 5deg;
+    transition: .5s;
+}
+@media (max-width : 768px) {
+    .services {
+        margin: 50px;
+    }
+}

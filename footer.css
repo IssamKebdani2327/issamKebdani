@@ -1,0 +1,60 @@
+.footer {
+    margin: 90px 170px 20px 170px;
+    font-weight: bold;
+}
+.footer .footer-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.footer .footer-top .footer-top-left p {
+    width: 50%;
+    margin-top: 10px;
+}
+.footer .footer-top .footer-top-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.footer .footer-top .footer-top-right input {
+    padding: 12px;
+    border-radius: 15px;
+    border: 1.5px solid #fff;
+    background-color: #333;
+}
+.footer .footer-top .footer-top-right button {
+    padding: 12px;
+    border-radius: 15px;
+    border: none;
+    background: linear-gradient(267deg , #da7c25 , #b923e1);   
+    cursor: pointer;
+}
+.footer .footer-top .footer-top-right button:hover {
+    transform: scale(1.05);
+    transition: .3s;
+}
+.footer .footer-bottom {
+    margin-top: 15px ;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .footer-bottom .footer-bottom-right {
+    display: flex;
+    gap: 20px;
+}
+
+
+@media (max-width :768px) {
+    .footer {
+        margin: 50px;
+    }
+    .footer-top {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 40px;
+    }
+}

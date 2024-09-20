@@ -1,0 +1,79 @@
+.about {
+    /* background-color: red; */
+    margin: 50px 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+}
+
+.about .about-contact {
+    display: flex;
+    gap: 35px;
+}
+.about .about-contact img{
+    width: 250px;
+    height: 300px;
+}
+.about .about-contact .text{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.about .about-contact .text .myself{
+    font-size: 20px;
+    font-weight: 500;
+}
+.about .about-contact .text .myskills .skill{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.about .about-contact .text .myskills .skill span{
+    min-width: 150px;
+}
+.about .about-contact .text .myskills .skill:hover {
+    transform: scale(1.05);
+    transition: .3s;
+}
+.about .about-contact .text .myskills .skill hr{
+    height: 2px;
+    border: none;
+    outline: none;
+    background: linear-gradient(267deg , #da7c25 , #b923e1);  
+}
+.achivements {
+    display: flex;
+    justify-content: space-between;    
+    width: 100%;
+    text-align: center;   
+}
+.achivement:hover {
+    transform: scale(1.2);
+    transition: .3s;
+}
+.achivement h1 {
+    background: linear-gradient(267deg , #da7c25 , #b923e1);   
+    background-clip: text; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 8px;
+}
+.achivement p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media (max-width : 768px) {
+    .about {
+        margin: 50px ;
+    }
+    .about-contact img {
+        display: none;
+    }
+    .about .about-contact .text .myskills .skill span{
+        min-width: 100px;
+    }
+}

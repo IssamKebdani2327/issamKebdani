@@ -1,0 +1,56 @@
+.hero {
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    text-align: center;
+}
+.hero img {
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+.hero h1 {
+    width: 70%; 
+}
+.hero p {
+    width: 40%;
+ }
+.hero h1 span{
+    background: linear-gradient(267deg , #da7c25 , #b923e1);   
+    background-clip: text; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero button {
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.hero .contact-button {
+    background: linear-gradient(267deg , #da7c25 , #b923e1);
+    margin-right: 20px;
+}
+.hero .resum {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+.hero .contact-button:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width : 768px) {
+    .hero img {
+        width: 120px;
+    }
+    .hero h1 {
+        width: 90%; 
+    }
+    .hero p {
+        width: 60%;
+    }
+}
